@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "parcel serve ./maquetar/index.html",
+    "build": "parcel build ./index.html --dist-dir build --public-url maquetando"
+  },
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
